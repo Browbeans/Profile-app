@@ -21,7 +21,16 @@ const navigationStyle = makeStyles(
             margin: "0",
             fontSize: "2rem",
             color: "white",
-            fontWeight: "lighter"
+            fontWeight: "lighter",
+            "&:hover": {
+                fontWeight: "500"
+              }
+        },
+        navigationContent: {
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            height: "100%"
         }
     }),
     {index: 1}
