@@ -14,7 +14,8 @@ const navigationStyle = makeStyles(
             display: "flex",
             justifyContent: "flex-end",
             borderBottom: "1px solid #fff",
-            marginTop: "0.5rem"
+            marginTop: "0.5rem",
+            cursor: "pointer"
         },
         menuText: {
             margin: "0",
