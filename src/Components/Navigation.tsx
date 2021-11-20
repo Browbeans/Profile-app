@@ -21,7 +21,13 @@ const Navigation:React.FC = () => {
                         <p className={navigationClasses.menuText}>CONTACT</p>
                     </div>
                 </div>
-                <h2>asdsad</h2>
+                <div className={navigationClasses.contactInfoContainer}>
+                <a
+                    href="oliverjohansson3@gmail.com"
+                >
+                    oliverjohansson3@gmail.com
+                </a>
+                </div>
             </div>
         </div>
     )

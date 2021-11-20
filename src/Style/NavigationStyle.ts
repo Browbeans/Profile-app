@@ -15,7 +15,10 @@ const navigationStyle = makeStyles(
             justifyContent: "flex-end",
             borderBottom: "1px solid #fff",
             marginTop: "0.5rem",
-            cursor: "pointer"
+            cursor: "pointer",
+            "&:hover": {
+                borderBottom: "3px solid #fff"
+            }
         },
         menuText: {
             margin: "0",
@@ -24,13 +27,19 @@ const navigationStyle = makeStyles(
             fontWeight: "lighter",
             "&:hover": {
                 fontWeight: "500"
-              }
+            }
         },
         navigationContent: {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
             height: "100%"
+        },
+        contactInfoContainer: {
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "2rem"
         }
     }),
     {index: 1}
