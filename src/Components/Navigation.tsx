@@ -5,7 +5,15 @@ const Navigation:React.FC = () => {
     const navigationClasses = navigationStyle();
     return(
         <div className={navigationClasses.navigationContainer}>
-
+            <div className={navigationClasses.navigationMenuItem}>
+                <p className={navigationClasses.menuText}>OLIVER</p>
+            </div>
+            <div className={navigationClasses.navigationMenuItem}>
+                <p className={navigationClasses.menuText}>QUALIFICATIONS</p>
+            </div>
+            <div className={navigationClasses.navigationMenuItem}>
+                <p className={navigationClasses.menuText}>PROJECTS</p>
+            </div>
         </div>
     )
 }
