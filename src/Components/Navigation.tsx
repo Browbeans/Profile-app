@@ -1,21 +1,15 @@
-import { Button } from "@material-ui/core";
-import  React, { useState } from "react"
+import  React, { useContext, useState } from "react"
+import { RenderContext } from "../Contexts/RenderContext";
 import navigationStyle from "../Style/NavigationStyle";
 
-type State = "About-me" | "qualifications" | "projects" | "contact"
-
 const Navigation:React.FC = () => { 
-   const [section, setSection] = useState<State>("About-me");
-   const handleState = (page: State) => {
-       setSection(page)
-       console.log(page)
-    };
+    const { mode, handleNavigation } = useContext(RenderContext)
     const navigationClasses = navigationStyle();
     return(
         <div className={navigationClasses.navigationContainer}>
             <div className={navigationClasses.navigationContent}>
                 <div>
-                    {section === "About-me"
+                    {mode === "About-me"
                         ?
                         <div className={navigationClasses.activeMenuItem}>
                         <p className={navigationClasses.activeMenuText}>OLIVER</p>    
@@ -23,12 +17,12 @@ const Navigation:React.FC = () => {
                         :
                         <div 
                             className={navigationClasses.navigationMenuItem}
-                            onClick={() => handleState("About-me")}
+                            onClick={() => handleNavigation("About-me")}
                         >
                             <p className={navigationClasses.menuText}>OLIVER</p>
                         </div>
                     } 
-                     {section === "qualifications"
+                     {mode === "qualifications"
                         ?
                         <div className={navigationClasses.activeMenuItem}>
                         <p className={navigationClasses.activeMenuText}>QUALIFICATIONS</p>    
@@ -36,12 +30,12 @@ const Navigation:React.FC = () => {
                         :
                         <div 
                             className={navigationClasses.navigationMenuItem}
-                            onClick={() => handleState("qualifications")}
+                            onClick={() => handleNavigation("qualifications")}
                         >
                             <p className={navigationClasses.menuText}>QUALIFICATIONS</p>
                         </div>
                     }
-                     {section === "projects"
+                     {mode === "projects"
                         ?
                         <div className={navigationClasses.activeMenuItem}>
                         <p className={navigationClasses.activeMenuText}>PROJECTS</p>    
@@ -49,12 +43,12 @@ const Navigation:React.FC = () => {
                         :
                         <div 
                             className={navigationClasses.navigationMenuItem}
-                            onClick={() => handleState("projects")}
+                            onClick={() => handleNavigation("projects")}
                         >
                             <p className={navigationClasses.menuText}>PROJECTS</p>
                         </div>
                     }
-                     {section === "contact"
+                     {mode === "contact"
                         ?
                         <div className={navigationClasses.activeMenuItem}>
                         <p className={navigationClasses.activeMenuText}>CONTACT</p>    
@@ -62,7 +56,7 @@ const Navigation:React.FC = () => {
                         :
                         <div 
                             className={navigationClasses.navigationMenuItem}
-                            onClick={() => handleState("contact")}
+                            onClick={() => handleNavigation("contact")}
                         >
                             <p className={navigationClasses.menuText}>CONTACT</p>
                         </div>
