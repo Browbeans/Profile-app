@@ -3,12 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import Navigation from './Components/Navigation';
 import AboutMe from './Components/AboutMe';
+import RenderProvider from './Contexts/RenderContext';
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <AboutMe />
+      <RenderProvider>
+        <Navigation />
+        <AboutMe />
+      </RenderProvider>  
     </div>
   );
 }
