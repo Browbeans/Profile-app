@@ -8,9 +8,9 @@ const aboutMeStyle = makeStyles(
       height: "100vh",
       backgroundImage: `url(${background})`,
       backgroundPositionX: "center",
-      backgroundSize: "110%",
+      backgroundSize: "100% 100%",
       backgroundRepeat: "no-repeat",
-      width: "100%"
+      width: "74%"
     }
   }),
   {index: 1}

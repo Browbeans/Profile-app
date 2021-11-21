@@ -5,7 +5,7 @@ const navigationStyle = makeStyles(
     () => ({
         navigationContainer: {
             height: "100vh",
-            width: "30rem",
+            width: "25rem",
             background: defaultColors.colorPrimary,
             paddingTop: "6rem"
         },
