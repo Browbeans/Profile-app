@@ -5,7 +5,7 @@ const navigationStyle = makeStyles(
     () => ({
         navigationContainer: {
             height: "100vh",
-            width: "25rem",
+            width: "30rem",
             background: defaultColors.colorPrimary,
             paddingTop: "6rem"
         },
@@ -40,6 +40,20 @@ const navigationStyle = makeStyles(
             display: "flex",
             justifyContent: "center",
             marginBottom: "2rem"
+        },
+        activeMenuItem: {
+            width: "80%",
+            display: "flex",
+            justifyContent: "flex-end",
+            marginTop: "0.5rem",
+            cursor: "pointer",
+            borderBottom: "3px solid #fff"
+        },
+        activeMenuText: {
+            margin: "0",
+            fontWeight: "normal",
+            fontSize: "2rem",
+            color: "white",
         }
     }),
     {index: 1}

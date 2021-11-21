@@ -5,7 +5,7 @@ const AboutMe:React.FC = () => {
   const aboutMeClasses = aboutMeStyle();
   return(
     <div className={aboutMeClasses.aboutMeContainer}>
-
+      
     </div>
   )
 }
