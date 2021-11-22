@@ -37,7 +37,7 @@ const aboutMeStyle = makeStyles(
     aboutMeChildHeadlines: {
       color: "white", 
       margin: "0",
-      marginBottom: "1rem",
+      marginBottom: ".5rem",
       fontSize: "1.5rem",
       textShadow: "2px 2px 3px rgba(0,0,0,0.6)",
       fontStyle: "italic",
@@ -45,7 +45,8 @@ const aboutMeStyle = makeStyles(
     },
     aboutMeParagraph: {
       color: "white",
-      fontSize: "1.1rem"
+      fontSize: "1.1rem",
+      margin: "0 0 1rem 0"
     },
     dedicatedInfoHolder: {
       width: "90%",
