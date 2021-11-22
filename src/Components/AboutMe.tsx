@@ -26,6 +26,18 @@ const AboutMe:React.FC = () => {
           </div>
           <div className={aboutMeClasses.dedicatedInfoContainer}>
             <h2 className={aboutMeClasses.aboutMeChildHeadlines}>Interests:</h2>
+            <p className={aboutMeClasses.aboutMeParagraph}>
+              In my sparetime i like to activate myself in different kind of activities
+              im a big fan of Golf (when you can actully play it). When the weather gets 
+              to bad I like to either go to the gym, play padel or box a few rounds. 
+            </p>
+            <h2 className={aboutMeClasses.aboutMeChildHeadlines}>Experience:</h2>
+            <p className={aboutMeClasses.aboutMeParagraph}>
+              At the time I am both working 100% and studying (FrontEnd-dev) at Medieinstitutet,
+              practiced in different kind of projects and techniques. I made my 10 week internship
+              at FrontEdge IT where we made a Customs-system for a startup called Tullify. The project 
+              was a fullstack project with 70% backend work and 30% frontend work.
+            </p>
           </div>
         </div>
       </div>
