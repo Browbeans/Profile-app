@@ -16,6 +16,7 @@ const AboutMe:React.FC = () => {
               advancing in my career. 
             </p>
             <h2 className={aboutMeClasses.aboutMeChildHeadlines}>Skills:</h2>
+            <p className={aboutMeClasses.aboutMeParagraph}></p>
           </div>
           <div className={aboutMeClasses.dedicatedInfoContainer}>
             <h2 className={aboutMeClasses.aboutMeChildHeadlines}>Interests:</h2>
