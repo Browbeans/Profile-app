@@ -3,6 +3,7 @@ import { RenderContext } from "../Contexts/RenderContext";
 import mainStyle from "../Style/MainStyle";
 import AboutMe from "./AboutMe";
 import Navigation from "./Navigation";
+import Qualifications from "./Qualifications";
 
 const Main:React.FC = () => {
   const mainClasses = mainStyle();
@@ -14,7 +15,7 @@ const Main:React.FC = () => {
           <AboutMe />
         }
         {mode === "qualifications" &&
-          <AboutMe />
+          <Qualifications />
         }
         {mode === "projects" &&
           <AboutMe />
